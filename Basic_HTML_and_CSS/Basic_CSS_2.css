@@ -1,0 +1,9 @@
+p {
+   color: darkblue;
+   background: lightblue;
+   font-weight: bold;
+   text-align: center;
+}
+h3 {
+	text-shadow: 3px 3px 8px yellow;
+}
