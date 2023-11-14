@@ -4,6 +4,7 @@
        <meta charset="utf-8">
        <title>Sunny Spain</title>
 	   <link rel="stylesheet" href="./css/one_page_website.css">
+	   <script src="JS/one_page_website.js" defer></script>
     </head>
 	<body>
 	<h1>SUNNY SPAIN</h1>
@@ -41,55 +42,69 @@
 		        <h1>Gallery</h1>
 				<h2>Check out these great destinations!</h2>
 			    <div>
-				
-					<!-- PHOTO-CONTAINER 1 -->
-				  <div>
-				       <div>
-					      <img src=".\spain photo\Picture_1.jpg" alt="Picture of Barcelona">
-					        <div>
-							    <h3>Book your trip to this amazing destination!</h3>
-		                    </div>
-					   </div>
-				  </div>
-                  <!-- END PHOTO CONTAINER 1 -->
-		
-				  <!-- PHOTO-CONTAINER 2 -->
-				  <div>
-				       <div>
-					      <img src=".\spain photo\Picture_2.jpg" alt="Picture of Tenerife beach">
-					        <div>
-							    <h3>Book your trip to this amazing destination!</h3>
-		                    </div>
-					   </div>
-				  </div>
-                  <!-- END PHOTO CONTAINER 2 -->
-		
-				  <!-- PHOTO-CONTAINER 3 -->
-				  <div>
-				       <div>
-					      <img src=".\spain photo\Picture_3.jpg">
-					        <div>
-							    <h3>Book your trip to this amazing destination!</h3>
-		                    </div>
-					   </div>
-				  </div>
-                  <!-- END PHOTO CONTAINER 3 -->
-		
-				  <!-- PHOTO-CONTAINER 4 -->
-				  <div>
-				       <div>
-					      <img src=".\spain photo\Picture_4.jpg" alt="Picture of Seville">
-					        <div>
-							    <h3>Book your trip to this amazing destination!</h3>
-		                    </div>
-					   </div>
-				  </div>
-                  <!-- END PHOTO CONTAINER 4 -->
 
-            </div> 
-	    </div>
-	  </section>
-	    <!-- END GALLERY -->
+					<div class="row">
+					  <div class="column">
+						<img src="spain photo/Picture_1small.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					  </div>
+					  <div class="column">
+						<img src="spain photo/Picture_2small.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					  </div>
+					  <div class="column">
+						<img src="spain photo/Picture_3small.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					  </div>
+					  <div class="column">
+						<img src="spain photo/Picture_4small.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					  </div>
+					</div>
+					
+					<div id="myModal" class="modal">
+					  <span class="close cursor" onclick="closeModal()">&times;</span>
+					  <div class="modal-content">
+					
+						<div class="mySlides">
+						  <div class="numbertext">1 / 4</div>
+						  <img src="spain photo/Picture_1.jpg" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+						  <div class="numbertext">2 / 4</div>
+						  <img src="spain photo/Picture_2.jpg" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+						  <div class="numbertext">3 / 4</div>
+						  <img src="spain photo/Picture_3.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+						  <div class="numbertext">4 / 4</div>
+						  <img src="spain photo/Picture_4.jpg" style="width:100%">
+						</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+						<div class="caption-container">
+						  <p id="caption"></p>
+						</div>
+					
+					
+						<div class="column">
+						  <img class="demo cursor" src="spain photo/Picture_1small.jpg" style="width:100%" onclick="currentSlide(1)" alt="Spain">
+						</div>
+						<div class="column">
+						  <img class="demo cursor" src="spain photo/Picture_2small.jpg" style="width:100%" onclick="currentSlide(2)" alt="Spain">
+						</div>
+						<div class="column">
+						  <img class="demo cursor" src="spain photo/Picture_3small.jpg" style="width:100%" onclick="currentSlide(3)" alt="Spain">
+						</div>
+						<div class="column">
+						  <img class="demo cursor" src="spain photo/Picture_4small.jpg" style="width:100%" onclick="currentSlide(4)" alt="Spain">
+						</div>
+					  </div>
+					</div>
+				
 
 		<!-- RSVP -->
 	   <section>
